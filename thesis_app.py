@@ -7,7 +7,7 @@ st.set_page_config(page_title="Matthew Jehrio Poster App")
 
 
 
-state = st.sidebar.selectbox('Page', ['Poster', 'Paper'])
+state = st.sidebar.selectbox('Page', ['Poster', 'Paper', 'Presentation'])
 
 
 def st_display_pdf(pdf_file):
@@ -18,6 +18,14 @@ def st_display_pdf(pdf_file):
 
 
 
+    
+if state == "Presentation":
+    
+    page_number = st.number_input('Page Number', 1, 40)
+    presentation_string = "Thesis_Presentation_git1024_" + page_number
+    st.image(presentation_string)
+    
+    
 if state == "Poster":
        
         st_display_pdf("DRAFT_Matthew_Jehrio_Poster.pdf")
