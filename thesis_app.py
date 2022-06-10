@@ -32,5 +32,5 @@ if state == "Poster":
         
 elif state == "Paper":
     paper_page_number = st.number_input('Page Number', 1, 40)
-    paper_string = "Thesis_Presentation_git1024_" + str(paper_page_number) + ".jpg"
+    paper_string = "Thesis_git1024_" + str(paper_page_number) + ".jpg"
     st.image(paper_string)
