@@ -21,8 +21,8 @@ def st_display_pdf(pdf_file):
     
 if state == "Presentation":
     
-    page_number = st.number_input('Page Number', 1, 40)
-    presentation_string = "Thesis_Presentation_git1024_" + str(page_number) + ".jpg"
+    presentation_page_number = st.number_input('Page Number', 1, 40)
+    presentation_string = "Thesis_Presentation_git1024_" + str(presentation_page_number) + ".jpg"
     st.image(presentation_string)
     
     
@@ -31,4 +31,6 @@ if state == "Poster":
         st_display_pdf("DRAFT_Matthew_Jehrio_Poster.pdf")
         
 elif state == "Paper":
-        st_display_pdf("manuscript.pdf")
+    paper_page_number = st.number_input('Page Number', 1, 40)
+    paper_string = "Thesis_Presentation_git1024_" + str(paper_page_number) + ".jpg"
+    st.image(paper_string)
