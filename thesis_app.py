@@ -22,7 +22,7 @@ def st_display_pdf(pdf_file):
 if state == "Presentation":
     
     page_number = st.number_input('Page Number', 1, 40)
-    presentation_string = "Thesis_Presentation_git1024_" + str(page_number)
+    presentation_string = "Thesis_Presentation_git1024_" + str(page_number) + ".jpg"
     st.image(presentation_string)
     
     
