@@ -28,7 +28,7 @@ if state == "Presentation":
     
 if state == "Poster":
        
-        st_display_pdf("DRAFT_Matthew_Jehrio_Poster.pdf")
+        st.image('old_format_poster.jpg')
         
 elif state == "Paper":
     paper_page_number = st.number_input('Page Number', 1, 40)
